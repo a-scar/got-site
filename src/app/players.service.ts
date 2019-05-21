@@ -22,6 +22,7 @@ export class PlayersService {
       {name: 'Jenna_2', score: '21'},
       {name: 'Teresa_1', score: '20'},
       {name: 'Teresa_2', score: '19'},
+      {name: 'Derrick_2', score: '19'},
       {name: 'Cindy', score: '18'},
       {name: 'Derrick_1', score: '17'},
       {name: 'Dennis', score: '17'},

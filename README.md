@@ -1,6 +1,6 @@
 # GotSite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+Angular application to display the leaderboard for a Game of Thrones pool. Clicking on a name will load the pdf entry using a built in pdf viewer.
 
 ## Development server
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MatListModule} from '@angular/material/list';
-import {MatCardModule} from '@angular/material/card';
+import { PlayersService } from '../players.service';
+import { Player } from './player';
 
 
 @Component({
@@ -9,8 +9,11 @@ import {MatCardModule} from '@angular/material/card';
   styleUrls: ['./leader-board.component.css']
 })
 export class LeaderBoardComponent implements OnInit {
+  players: Player[];
 
-  constructor() { }
+  constructor(playerService: PlayersService) {
+    this.players = playerService.getPlayers();
+  }
 
   ngOnInit() {
   }

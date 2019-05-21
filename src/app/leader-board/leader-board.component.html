@@ -2,11 +2,9 @@
   <mat-card-header>
     <mat-card-title>Leader Board</mat-card-title>
   </mat-card-header>
-  <mat-list role="list">
-    <mat-list-item role="listitem">Item 1</mat-list-item>
-    <mat-divider [inset]="true"></mat-divider>
-    <mat-list-item role="listitem">Item 2</mat-list-item>
-    <mat-divider [inset]="true"></mat-divider>
-    <mat-list-item role="listitem">Item 3</mat-list-item>
-  </mat-list>
+  <mat-nav-list role="list">
+    <a mat-list-item *ngFor="let player of players" [routerLink]="['/playerEntry', player.name]" role="listitem">{{ player.name }} &nbsp; - &nbsp; {{ player.score }}
+      <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
+    </a>
+  </mat-nav-list>
 </mat-card>

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LeaderBoardComponent } from './leader-board/leader-board.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { PlayerEntryComponent } from './player-entry/player-entry.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dahsboard', pathMatch: 'full'},
-  { path: 'dashboard', component: DashboardComponent },
+  { path: '', redirectTo: '/leaderBoard', pathMatch: 'full'},
   { path: 'leaderBoard', component: LeaderBoardComponent },
+  { path: 'playerEntry/:playerName', component: PlayerEntryComponent },
 ];
 
 @NgModule({
